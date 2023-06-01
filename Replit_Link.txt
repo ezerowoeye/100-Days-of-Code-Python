@@ -1,0 +1,5 @@
+Day 1 To create a Band Name, Operate the Band Name Generator
+https://replit.com/@EzerTobi/band-name-generator-start?v=1
+
+Day 2 To Operate the Tip Calculator:
+https://replit.com/@EzerTobi/tip-calculator-start?v=1
