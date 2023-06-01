@@ -18,17 +18,35 @@
 
 # 3
 # a tip calculator
-print("Welcome to the tip calculator")
-total_bill = float(input("What was the total bill? $"))
-percent_tip = input("What percentage tip would you like to give? 10, 12 or 15? ")
-percent_number = (int(percent_tip) / 100)
-tip_value = percent_number * total_bill
-added_tip = (total_bill) + tip_value
-spliting_people = input("How many people to split the bill? ")
+# print("Welcome to the tip calculator")
+# total_bill = float(input("What was the total bill? $"))
+# percent_tip = input("What percentage tip would you like to give? 10, 12 or 15? ")
+# percent_number = (int(percent_tip) / 100)
+# tip_value = percent_number * total_bill
+# added_tip = (total_bill) + tip_value
+# spliting_people = input("How many people to split the bill? ")
 
-spliting_people2int = int(spliting_people)
+# spliting_people2int = int(spliting_people)
 
-each_to_pay = round(added_tip / spliting_people2int, 2)
+# each_to_pay = round(added_tip / spliting_people2int, 2)
 
-result = f"Each person should pay: ${each_to_pay}"
-print(result)
+# result = f"Each person should pay: ${each_to_pay}"
+# print(result)
+
+# Day 3.
+# To calculate BMI (Body Mass Index)
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+
+BMI = round(weight / (height ** 2))
+
+if BMI < 18.5:
+    print(f"Your BMI is {BMI}, you are underweight.")
+elif BMI <25:
+    print(f"Your BMI is {BMI}, you have a normal weight.")
+elif BMI  < 30:
+    print(f"Your BMI is {BMI}, you are slightly overweight.")
+elif BMI < 35:
+    print(f"Your BMI is {BMI}, you are obese.")
+else:
+    print(f"Your BMI is {BMI}, you are clinically obese.")
