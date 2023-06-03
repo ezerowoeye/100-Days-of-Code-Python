@@ -35,11 +35,13 @@ if crossroad == "right":
     if colour == "red":
       print("You enter a room of beasts. Game Over.")
     elif colour == "blue":
-      print("You chose a door that doesn\'t exist. Game Over.")
+      print("It\'s a room full of fire. Game Over.")
     elif colour == "yellow":
       print("You found the treasure! You Win!" )
-  elif lake == "swim":
-    print("You fell into a hole. Game Over.")
+    else:
+      print("You chose a door that doesn\'t exist. Game Over.")
+  else:
+    print("You got attacked by an angry trout. Game Over.")
     
-elif crossroad == "left":
-  print("It\'s a room full of fire. Game Over.")
+else:
+  print("You fell into a hole. Game Over.")

@@ -1,22 +1,4 @@
-# 1
-# score = 20
-# height= 1.8
-# isWinning= True
-
-# print(f"Your score is {score}, your height is {height}, you are not {isWinning}")
-
-# 2
-# Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
-# age = input("What is your current age? ")
-# age2int = (90 - int(age))
-# days = age2int * 365
-# weeks = age2int * 52
-# months = age2int * 12
-# result = f"You have {days} days, {weeks} weeks, and {months} months left"
-# print(result)
-# # print(f"You have {days} days, {weeks} weeks, and {months} months left")
-
-# 3
+# Day 3 exercise
 # a tip calculator
 # print("Welcome to the tip calculator")
 # total_bill = float(input("What was the total bill? $"))
