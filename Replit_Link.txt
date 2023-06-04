@@ -6,3 +6,6 @@ https://replit.com/@EzerTobi/tip-calculator-start?v=1
 
 Day 3 To build the game "Treasure Island"
 https://replit.com/@EzerTobi/treasure-island-start?v=1
+
+Day 4 To build a Rock, Paper and Scissors Game module
+https://replit.com/@EzerTobi/rock-paper-scissors-start?v=1
