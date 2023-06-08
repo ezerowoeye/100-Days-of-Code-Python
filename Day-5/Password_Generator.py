@@ -55,24 +55,24 @@ print(password)
 #   randomized_password += password[hello]
 # print(randomized_password)
 
-randomized_password=""
+# randomized_password=""
 
-addition = nr_letters + nr_numbers + nr_symbols
-d = 0
-e = []
-f=""
-while d < addition:
-  hello = random.randint(0, addition - 1)
-  f += str(hello)
+# addition = nr_letters + nr_numbers + nr_symbols
+# d = 0
+# e = []
+# f=""
+# while d < addition:
+#   hello = random.randint(0, addition - 1)
+#   f += str(hello)
   
-  for y in z:
-    if y == hello:
-      e.append(y)
-    elif hello != e:
-      randomized_password += password[hello]
-  d += 1
+#   for y in z:
+#     if y == hello:
+#       e.append(y)
+#     elif hello != e:
+#       randomized_password += password[hello]
+#   d += 1
 
-print(randomized_password)
+# print(randomized_password)
 
 
 #Angela Yu code:
@@ -102,23 +102,23 @@ print(randomized_password)
 # print(password)
 
 #Hard Level
-# password_list = []
+password_list = []
 
-# for char in range(1, nr_letters + 1):
-#   password_list.append(random.choice(letters))
+for char in range(1, nr_letters + 1):
+  password_list.append(random.choice(letters))
 
-# for char in range(1, nr_symbols + 1):
-#   password_list += random.choice(symbols)
+for char in range(1, nr_symbols + 1):
+  password_list += random.choice(symbols)
 
-# for char in range(1, nr_numbers + 1):
-#   password_list += random.choice(numbers)
+for char in range(1, nr_numbers + 1):
+  password_list += random.choice(numbers)
 
-# print(password_list)
-# random.shuffle(password_list)
-# print(password_list)
+print(password_list)
+random.shuffle(password_list)
+print(password_list)
 
-# password = ""
-# for char in password_list:
-#   password += char
+password = ""
+for char in password_list:
+  password += char
 
-# print(f"Your password is: {password}")
+print(f"Your password is: {password}")
