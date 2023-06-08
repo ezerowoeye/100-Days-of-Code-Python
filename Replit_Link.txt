@@ -12,3 +12,9 @@ https://replit.com/@EzerTobi/rock-paper-scissors-start?v=1
 
 Day 5 To create a randomized password generator
 https://replit.com/@EzerTobi/password-generator-start?v=1
+
+Day 6 play the maze section of the reeborg games:
+https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=problem_world3.json&url=user_world%3Aproblem_world3.json
+
+Day 7 Built a Hangman Game
+https://replit.com/@EzerTobi/Day-7-Hangman-5-Start?v=1
