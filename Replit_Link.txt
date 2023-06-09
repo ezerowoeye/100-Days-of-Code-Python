@@ -18,3 +18,6 @@ https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freebor
 
 Day 7 Built a Hangman Game
 https://replit.com/@EzerTobi/Day-7-Hangman-5-Start?v=1
+
+Day 8 Developed a Ceaser Cipher Encryption:
+https://replit.com/@EzerTobi/caesar-cipher-game?v=1
