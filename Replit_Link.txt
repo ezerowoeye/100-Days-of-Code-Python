@@ -21,3 +21,6 @@ https://replit.com/@EzerTobi/Day-7-Hangman-5-Start?v=1
 
 Day 8 Developed a Ceaser Cipher Encryption:
 https://replit.com/@EzerTobi/caesar-cipher-game?v=1
+
+Day 9 To deploy an auction game but secretly:
+https://replit.com/@EzerTobi/blind-auction?v=1
