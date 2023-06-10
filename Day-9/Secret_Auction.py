@@ -7,6 +7,7 @@ print("Welcome to the secret auction program.")
 
 every_bidders = []
 def bidders_details(given_name, given_bid_value):
+  """Used for return back every_bidders"""
   new_bidders = {}
   new_bidders["Name"] = given_name
   new_bidders["bid"] = given_bid_value
