@@ -42,7 +42,7 @@ the_name_key = name_in_list[list_index]
 print(f"The winner is {the_name_key} with a bid of ${highest_bid}")
 
 
-# Angela Yu code:
+# Instructor [Angela Yu] code:
 from replit import clear
 from art import logo
 print(logo)
