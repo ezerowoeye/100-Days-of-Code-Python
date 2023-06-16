@@ -1,7 +1,8 @@
 import random
 from game_data import data
 from art import logo, vs
-from replit import clear
+# from replit import clear
+# Only works in replit
 
 choice = ""
 choice2 = ""
@@ -9,7 +10,7 @@ first = ""
 second = ""
 
 def printchoice(choice, choice2):
-  clear()
+#   clear()
   print(logo)
   print(f"Compare A: {choice['name']} , a {choice['description']}, from {choice['country']}.")
   print(vs)
@@ -20,7 +21,7 @@ def game(first, second, choice, choice2):
   is_true = True
   while is_true:
     play_again = input("Do you want to play? y or n: ").lower()
-    clear()
+    # clear()
     if play_again == 'y': 
       choice = random.choice(data)
       choice2 = random.choice(data)
@@ -41,6 +42,8 @@ def game(first, second, choice, choice2):
           print(f"You're right! Current score: {current_score}.")
           choice = choice2
           choice2 = random.choice(data)
+          if choice == choice2:
+            choice2 = random.choice(data)
           first = choice['follower_count']
           second = choice2['follower_count']   
           printchoice(choice, choice2)
@@ -50,10 +53,13 @@ def game(first, second, choice, choice2):
           print(f"You're right! Current score: {current_score}.")
           choice = choice2
           choice2 = random.choice(data)
+          if choice == choice2:
+            choice2 = random.choice(data)
           first = choice['follower_count']
           second = choice2['follower_count']
-          printchoice(choice, choice2)          
+          printchoice(choice, choice2)
         else:
+        #   clear()
           print(logo)
           print(f"Sorry, well, that's wrong. Final score: {current_score}.")
           secondtime = False
