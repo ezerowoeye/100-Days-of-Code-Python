@@ -33,3 +33,6 @@ https://replit.com/@EzerTobi/My-blackjack-code?v=1
 
 Day 12 a Number Guessing Game:
 https://replit.com/@EzerTobi/Ezer-guess-the-number?v=1
+
+Day 14 Higher Level Game:
+https://replit.com/@EzerTobi/Ezer-higher-lower?v=1
