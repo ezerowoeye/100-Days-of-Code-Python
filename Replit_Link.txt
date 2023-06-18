@@ -36,3 +36,6 @@ https://replit.com/@EzerTobi/Ezer-guess-the-number?v=1
 
 Day 14 Higher Level Game:
 https://replit.com/@EzerTobi/Ezer-higher-lower?v=1
+
+Day 15 Coffee Machine:
+https://replit.com/@EzerTobi/Ezer-coffee-machine?v=1
