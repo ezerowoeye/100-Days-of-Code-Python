@@ -45,39 +45,53 @@ def process_the_resource():
 
 the_process = True
 another_order = 0
+profit = 0
 
 while the_process:
-    order = input("What would you like? (espresso/latte/cappuccino): ")
-    cost_amount = menu[order]["cost"]
-  
-    water= menu[order]["ingredients"]["water"]
-    coffee = menu[order]["ingredients"]["coffee"]
-    milk = menu[order]["ingredients"]["milk"]
+    order = input("   What would you like? (espresso/latte/cappuccino): ").lower()
+    if order == "off":
+        the_process = False
+    elif order == "report" and another_order == 0:
+        print(f" Water: {resources['water']}ml")
+        print(f" Milk: : {resources['milk']}ml")
+        print(f" Coffee: {resources['coffee']}ml")
+        print(f" Money: {profit}")
+    elif order == "report" and another_order >= 1:
+        print(f" Water: {present_resources[0]}ml")
+        print(f" Milk: : {present_resources[1]}ml")
+        print(f" Coffee: {present_resources[2]}ml")
+        print(f" Money: {profit}")
+    else:
+        cost_amount = menu[order]["cost"]
+        profit += cost_amount
+        water= menu[order]["ingredients"]["water"]
+        coffee = menu[order]["ingredients"]["coffee"]
+        milk = menu[order]["ingredients"]["milk"]
 
-    another_order += 1
-    if another_order == 1:
-        process_the_resource()
-        check_pay()
-        final_change = total_paid - cost_amount
-        if total_paid < cost_amount:
-          print("Sorry that's not enough money. Money refunded.")
-        else:
-            call_function()
-
-    elif another_order > 1:
-        water_resources = present_resources[0]
-        coffee_resources = present_resources[2]
-        milk_resources = present_resources[1]
-        if water_resources < water:
-            print("Sorry there is not enough water.")
-            the_process = False
-        elif milk_resources < milk:
-            print("Sorry, there is not enough milk")
-            the_process = False
-        else:
+        another_order += 1
+        if another_order == 1:
+            process_the_resource()
             check_pay()
             final_change = total_paid - cost_amount
             if total_paid < cost_amount:
-               print("Sorry that's not enough money. Money refunded.")
+                print("Sorry that's not enough money. Money refunded.")
             else:
-              call_function()
+                call_function()
+
+        elif another_order > 1:
+            water_resources = present_resources[0]
+            coffee_resources = present_resources[2]
+            milk_resources = present_resources[1]
+            if water_resources < water:
+                print("Sorry there is not enough water.")
+                the_process = False
+            elif milk_resources < milk:
+                print("Sorry, there is not enough milk")
+                the_process = False
+            else:
+                check_pay()
+                final_change = total_paid - cost_amount
+                if total_paid < cost_amount:
+                    print("Sorry that's not enough money. Money refunded.")
+                else:
+                    call_function()
