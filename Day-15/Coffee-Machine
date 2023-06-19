@@ -25,6 +25,7 @@ def process(order, present_resources, final_change):
         print(f"Here is your {order} ☕️. Enjoy!")
         return present_resources
 
+
 def call_function():
     if order == "espresso":
         process(order, present_resources, final_change)
@@ -32,6 +33,7 @@ def call_function():
         process(order, present_resources, final_change)
     else:
         process(order, present_resources, final_change)
+
 
 def process_the_resource():
     new_resources = []
@@ -42,6 +44,7 @@ def process_the_resource():
     new_resources.append(resources["coffee"])
     present_resources = new_resources
     return present_resources
+
 
 the_process = True
 another_order = 0
@@ -64,7 +67,7 @@ while the_process:
     else:
         cost_amount = menu[order]["cost"]
         profit += cost_amount
-        water= menu[order]["ingredients"]["water"]
+        water = menu[order]["ingredients"]["water"]
         coffee = menu[order]["ingredients"]["coffee"]
         milk = menu[order]["ingredients"]["milk"]
 
