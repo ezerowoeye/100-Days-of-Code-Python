@@ -13,16 +13,19 @@ class Scoreboard(Turtle):
         self.update_score()
 
     def update_score(self):
+        """for creating scoreboard"""
         self.clear()
         self.write(f"Level: {self.count}", False, "left", FONT)
 
     def increase_level(self):
+        """for increasing level point"""
         self.count += 1
         self.update_score()
 
     def game_over(self):
+        """for when player gets caught by a car"""
         self.goto(0, 0)
-        self.write(f"GAME OVER", align="center", font=FONT)
+        self.write("GAME OVER", False, "center", FONT)
 
 
 
