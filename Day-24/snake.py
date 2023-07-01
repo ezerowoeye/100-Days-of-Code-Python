@@ -13,7 +13,7 @@ class Snake:
         # x_positions = [0, -20, -40]
         self.new_avia = []
         self.body()
-        self.head = self.new_avia[0]
+        self.head= self.new_avia[0]
 
     def body(self):
         # for create_turtle in range(0,3):
@@ -23,18 +23,24 @@ class Snake:
 
     def add_segment(self, position):
         avia = Turtle("square")
-        # avia.shapesize(5, 1)
         avia.penup()
         avia.color("white")
         # avia.goto(x_positions[create_turtle], 0)
         avia.goto(position)
         self.new_avia.append(avia)
 
+    def reset(self):
+        for seg in self.new_avia:
+            seg.goto(1000, 1000)
+        self.new_avia.clear()
+        self.body()
+        self.head = self.new_avia[0]
+
     def extend(self):
         self.add_segment(self.new_avia[-1].position())
 
     def move(self):
-        print("Entered move")
+        # print("Entered move")
         for avia_num in range(len(self.new_avia) - 1, 0, -1):
             new_x = self.new_avia[avia_num - 1].xcor()
             new_y = self.new_avia[avia_num - 1].ycor()
@@ -47,18 +53,14 @@ class Snake:
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
 
-
     def down(self):
         if self.head.heading() != UP:
             self.head.setheading(DOWN)
-
 
     def left(self):
         if self.head.heading() != RIGHT:
             self.head.setheading(LEFT)
 
-
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
-
