@@ -19,7 +19,7 @@ for colour in colour_list:
 
 squirrel_colour_list = {
     "Fur Color": ["Gray", "Red", "Black"],
-    "Count": [gray_number, cinnamon_number, black_number]
+    # "Count": [gray_number, cinnamon_number, black_number]
 }
 
 #Angela's code
