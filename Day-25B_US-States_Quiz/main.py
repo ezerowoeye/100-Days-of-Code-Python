@@ -28,10 +28,7 @@ while len(guessed_state) < 50:
                                     prompt="What's another state's name?").title()
 
     if answer_state == "Exit":
-        missing_state = []
-        for state in state_data:
-            if state not in guessed_state:
-                missing_state.append(state)
+        missing_state = [state for state in state_data if state not in guessed_state]
         dict_missing_state = {
             "Missing_states": missing_state
         }
