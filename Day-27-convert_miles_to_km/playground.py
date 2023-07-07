@@ -91,6 +91,8 @@ text.pack()
 def spinbox_used():
     # gets the current value in spinbox.
     print(spinbox.get())
+    print("spinbox")
+
 
 
 spinbox = Spinbox(from_=0, to=10, width=5, command=spinbox_used)
@@ -101,7 +103,7 @@ spinbox.pack()
 # Called with current scale value.
 def scale_used(value):
     print(value)
-
+    print("we are here")
 
 scale = Scale(from_=0, to=100, command=scale_used)
 scale.pack()
