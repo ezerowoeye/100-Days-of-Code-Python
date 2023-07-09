@@ -11,6 +11,7 @@ Day 27: done July 05
 Day 28: done July 06 and July 07
 Day 29: July 07
 Day 30: July 08
+Day 31: July 09
 
 Library learned so far:
 1. Turtle: goto(), getheading(), setheading(), listening and call function, write, color, 
