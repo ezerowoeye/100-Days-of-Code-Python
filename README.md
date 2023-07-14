@@ -12,6 +12,7 @@ Day 28: done July 06 and July 07
 Day 29: July 07
 Day 30: July 08
 Day 31: July 09
+Day 32: July 10, used pythonanywhere.com to automate email sending
 
 Library learned so far:
 1. Turtle: goto(), getheading(), setheading(), listening and call function, write, color, 
