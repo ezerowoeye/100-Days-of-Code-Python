@@ -9,9 +9,11 @@ class QuizBrain:
         self.current_question = None
 
     def still_has_questions(self):
+        """for checking if question still remains"""
         return self.question_number < len(self.question_list)
 
     def next_question(self):
+        """for bringing up the next questions in association with ui.py"""
         self.current_question = self.question_list[self.question_number]
         self.question_number += 1
         q_text = html.unescape(self.current_question.text)
@@ -20,6 +22,7 @@ class QuizBrain:
         # self.check_answer(user_answer)
 
     def check_answer(self, user_answer) -> bool:
+        """for checking if answer choosing is correct and for changing scores"""
         correct_answer = self.current_question.answer
         if user_answer.lower() == correct_answer.lower():
             self.score += 1

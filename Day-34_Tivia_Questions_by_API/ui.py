@@ -35,6 +35,7 @@ class QuizInterface:
         self.window.mainloop()
 
     def get_next_question(self):
+        """for getting next question and checking if question still remains"""
         self.canvas.config(bg="white")
         if self.quiz.still_has_questions():
             self.score.config(text=f"Score: {self.quiz.score}")
@@ -46,13 +47,16 @@ class QuizInterface:
             self.false.config(state="disabled")
 
     def right_answer(self):
+        """for checking if the answer is True"""
         self.get_feedback(self.quiz.check_answer("True"))
 
     def wrong_answer(self):
+        """for checking if the answer is False"""
         is_right = self.quiz.check_answer("False")
         self.get_feedback(is_right)
 
     def get_feedback(self, is_right):
+        """for colour feedback i.e green if correct and red if wrong"""
         if is_right:
             self.canvas.config(bg="green")
         else:
