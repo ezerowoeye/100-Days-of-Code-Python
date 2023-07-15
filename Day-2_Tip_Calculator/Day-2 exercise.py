@@ -1,4 +1,4 @@
-# Day-2 exercise
+# Day-2_Tip_Calculator exercise
 # Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
 
 age = input("What is your current age? ")

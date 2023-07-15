@@ -1,6 +1,16 @@
 import requests
 
-response = requests.get("https://opentdb.com/api.php?amount=10&type=boolean")
+parameters = {
+    "amount": 10,
+    "type": "boolean",
+    "category": 9,
+    "difficulty": "medium",
+}
+
+# can change question categories at "https://opentdb.com/api_config.php"
+# https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=boolean
+# response = requests.get("https://opentdb.com/api.php?amount=10&type=boolean")
+response = requests.get("https://opentdb.com/api.php", params=parameters)
 response.raise_for_status()
 
 data = response.json()

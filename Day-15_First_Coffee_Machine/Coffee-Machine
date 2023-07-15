@@ -1,5 +1,6 @@
 from requirement import menu, resources
 
+
 def check_pay():
     print("Please insert coins.")
     quarters = float(input("how many quarters: "))
@@ -14,16 +15,17 @@ def check_pay():
     total_paid = quarters_value + nickles_amount + dimes_value + pennies_amount
     return total_paid
 
+
 def process(order, present_resources, final_change):
-        water_amount= present_resources[0] - water
-        milk_amount = present_resources[1] - milk
-        coffee_amount = present_resources[2] - coffee
-        present_resources[0] = water_amount
-        present_resources[2] =coffee_amount
-        present_resources[1] = milk_amount
-        print(f"Here is ${final_change:.2f} in change")
-        print(f"Here is your {order} ☕️. Enjoy!")
-        return present_resources
+    water_amount = present_resources[0] - water
+    milk_amount = present_resources[1] - milk
+    coffee_amount = present_resources[2] - coffee
+    present_resources[0] = water_amount
+    present_resources[2] = coffee_amount
+    present_resources[1] = milk_amount
+    print(f"Here is ${final_change:.2f} in change")
+    print(f"Here is your {order} ☕️. Enjoy!")
+    return present_resources
 
 
 def call_function():
