@@ -31,6 +31,10 @@ self.shape("circle"), self.penup(), self.shapesize(), self.color("blue"), self.s
 Screen(), screen.title(), image = "", screen.addshape(image),screen.setup()
 2. Pandas: read_csv(), DataFrame
 3. Tkinter: label, entry, button, get(), pack, grid, place, canvas
+4. Requests: requests.get("api_link", params=)
 
 Site visited:
 1. Colorhunt.co, for diverse combinations of colours
+
+2. HTTP Status Code: https://httpstatuses.io/
+3. For different APIs: apilist.fun
