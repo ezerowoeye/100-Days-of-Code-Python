@@ -66,6 +66,6 @@ if will_rain:
 #                      to='+15558675310'
 #                  )
 #
-# print(message.sid, print)
+# print(message.sid)
 # set TWILIO_ACCOUNT_SID=AC3fded91ae307f2e8a163108ef2f2bb22
 # set TWILIO_AUTH_TOKEN=adcb7e5e427aca53d46085b9b1eb4100
