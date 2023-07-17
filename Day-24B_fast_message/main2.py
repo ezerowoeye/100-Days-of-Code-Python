@@ -1,5 +1,5 @@
 # Relative file path: relative to current working directory
-# C:\Users\hp\Desktop\GitHub\100-Days-of-Code-Python\Day-24B\main2.py
+# C:\Users\hp\Desktop\GitHub\100-Days-of-Code-Python\Day-24B\main2_angela.py
 with open("../../../my_file.txt") as file:
     contents = file.read()
     print(contents)

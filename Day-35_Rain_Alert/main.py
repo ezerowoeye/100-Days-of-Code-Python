@@ -3,7 +3,7 @@ import os
 from twilio.rest import Client
 
 api_key = ""
-account_sid = "AC3fded91ae307f2e8a163108ef2f2bb22"
+account_sid = ""
 auth_token = ""
 
 number = +12055741799
@@ -18,12 +18,12 @@ response = requests.get("https://api.openweathermap.org/data/2.5/forecast", para
 # print(response.raise_for_status())
 
 weather_data = response.json()
-# print(data)
+# print(weather_data)
 weather_condition = []
 # made use of a 3-hour weather forcast. 3 x 4 == 12 hours.
 # using slices:
-weather_slice = weather_data["list"][:4]
-
+# weather_slice = weather_data["list"][:4]
+#
 will_rain = False
 # for hour_data in weather_slice:
 #     condition_code = hour_data["weather"][0]["id"]
@@ -37,35 +37,14 @@ for x in range(4):
     weather_condition.append(weather_id)
 
 # ☔
-
+#
 if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages \
         .create(
         body="It's going to rain today, Remember to bring an Umbrella",
-        from_='+12055741799',
-        to='+2347064938773'
+        from_='twilio number',
+        to='my number'
     )
     print(message.status)
 # print(condition)
-
-# import os
-# from twilio.rest import Client
-#
-#
-# # Find your Account SID and Auth Token at twilio.com/console
-# # and set the environment variables. See http://twil.io/secure
-# account_sid = os.environ['TWILIO_ACCOUNT_SID'] AC3fded91ae307f2e8a163108ef2f2bb22
-# auth_token = os.environ['TWILIO_AUTH_TOKEN'] adcb7e5e427aca53d46085b9b1eb4100
-# client = Client(account_sid, auth_token)
-#
-# message = client.messages \
-#                 .create(
-#                      body="Join Earth's mightiest heroes. Like Kevin Bacon.",
-#                      from_='+15017122661',
-#                      to='+15558675310'
-#                  )
-#
-# print(message.sid)
-# set TWILIO_ACCOUNT_SID=AC3fded91ae307f2e8a163108ef2f2bb22
-# set TWILIO_AUTH_TOKEN=adcb7e5e427aca53d46085b9b1eb4100
