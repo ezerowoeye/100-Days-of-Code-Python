@@ -48,22 +48,21 @@ def save():
         # messagebox.showerror(title="Oops", message="Please don't leave any fields empty")
         # OR
         messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty")
-
     else:
         try:
-            with open("data.json", "r") as data_file:
+            with open("../../data.json", "r") as data_file:
                 # Reading old data
                 data = json.load(data_file)
 
         except FileNotFoundError:
-            with open("data.json", "w") as data_file:
+            with open("../../data.json", "w") as data_file:
                 # creating new json file
                 json.dump(new_data, data_file, indent=4)
         else:
             # Updating old data with new data
             data.update(new_data)
 
-            with open("data.json", "w") as data_file:
+            with open("../../data.json", "w") as data_file:
                 # saving updated data
                 json.dump(data, data_file, indent=4)
         finally:
@@ -76,7 +75,7 @@ def save():
 def find_password():
     website_text = website_input.get()
     try:
-        with open("data.json", "r") as data:
+        with open("../../data.json", "r") as data:
             data_search = json.load(data)
 
     except FileNotFoundError:

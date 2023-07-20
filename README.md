@@ -25,6 +25,15 @@ Day 33: July 14, made use of api
 
 Day 34: July 14 and July 15. used API to improve Day 17 trivia game
 
+Day 35: July 16. used twilio to send in message
+
+Day 36: July 17. used alpahadvantage and newsapi API plus twilio
+
+Day 37: July 18, used pixe.la or docs.pixe.la to track work done through graphs.
+learnt: request.put,post and delete.
+
+Day 38: July 20, used sheety, trackapi.nutritionix
+
 Library learned so far:
 1. Turtle: goto(), getheading(), setheading(), listening and call function, write, color, 
 self.shape("circle"), self.penup(), self.shapesize(), self.color("blue"), self.speed("fastest"), self.refresh()
@@ -38,3 +47,4 @@ Site visited:
 
 2. HTTP Status Code: https://httpstatuses.io/
 3. For different APIs: apilist.fun
+4. For work graphs creation: docs.pixe.la
