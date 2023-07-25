@@ -33,7 +33,8 @@ Day 37: July 18, used pixe.la or docs.pixe.la to track work done through graphs.
 learnt: request.put,post and delete.
 
 Day 38: July 20, used sheety, trackapi.nutritionix
-
+Day 39: probably July 21 tp July 22
+Day 40: July 25, worked on this and Day 39 for like 4-5days
 Library learned so far:
 1. Turtle: goto(), getheading(), setheading(), listening and call function, write, color, 
 self.shape("circle"), self.penup(), self.shapesize(), self.color("blue"), self.speed("fastest"), self.refresh()

@@ -1,12 +1,12 @@
 import requests
-
+import os
 # from pprint import pprint
 # This class is responsible for talking to the Google Sheet.
-SHEETY_ENDPOINT = "https://api.sheety.co/729c7f18cbbe826cbbfb995f0f2cc15b/flightDeals/prices"
-USERNAME = 'ezertobi'
-PASSWORD = 'ezerpeniel2580'
+SHEETY_ENDPOINT = os.environ['SHEETY_ENDPOINT']
+USERNAME = os.environ['USERNAME']
+PASSWORD = os.environ['PASSWORD']
 
-
+# print(SHEETY_ENDPOINT, USERNAME, PASSWORD)
 class DataManager:
     def __init__(self):
         self.sheet_details = {}
@@ -30,3 +30,5 @@ class DataManager:
                 auth=(USERNAME, PASSWORD)
             )
             print(response.text)
+
+
