@@ -42,7 +42,7 @@ link for day 41-44: https://github.com/Hethii/Web-Development-Projects
 
 Day 41/42/43: July 26 
 
-Day 44: Started July 26
+Day 44: Started July 26, 3 days off. ended July 31
 
 Library learned so far:
 1. Turtle: goto(), getheading(), setheading(), listening and call function, write, color, 

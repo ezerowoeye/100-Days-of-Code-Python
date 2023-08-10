@@ -13,7 +13,7 @@ sent = 0
 data = pandas.read_csv("../../../birthdays.csv")
 for (index, data_row) in data.iterrows():
     if present_day == 0:
-        file_path = f"letter_templates/letter_1.txt"
+        file_path = f"letter_templates/letter_2.txt"
         with open(file_path) as letter_file:
             contents = letter_file.read()
             letter = contents.replace("[NAME]", data_row["name"])
@@ -25,7 +25,7 @@ for (index, data_row) in data.iterrows():
         #     connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         #     connection.sendmail(from_addr=MY_EMAIL,
         #                         to_addrs=data_row["email"],
-        #                         msg=f"Subject:Monday Roses 🌹 for you {data_row['name']}\n\n"
+        #                         msg=f"Subject:Monday Roses  for you {data_row['name']}\n\n"
         #                             f"{letter2}".encode("utf-8"),
         #                         )
         # with smtplib.SMTP("smtp.gmail.com") as connection:
@@ -33,7 +33,7 @@ for (index, data_row) in data.iterrows():
         #     connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         #     connection.sendmail(from_addr=MY_EMAIL,
         #                         to_addrs=data_row["email"],
-        #                         msg=f"Subject:Hello {data_row['name']}\n\n"
+        #                         msg=f"Subject:Monday situationship report 😊 for you {data_row['name']}\n\n"
         #                             f"{letter2}".encode("utf-8"),
         #                         )
         sent += 1
