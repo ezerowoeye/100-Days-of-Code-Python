@@ -44,6 +44,12 @@ Day 41/42/43: July 26
 
 Day 44: Started July 26, 3 days off. ended July 31
 
+Day 48: August 09/10
+Day 49: August 10/11
+Day 50: August 11
+Day 51: Auguest 14
+Day 52: August 14/15
+Day 53: Auguest 15
 Library learned so far:
 1. Turtle: goto(), getheading(), setheading(), listening and call function, write, color, 
 self.shape("circle"), self.penup(), self.shapesize(), self.color("blue"), self.speed("fastest"), self.refresh()
@@ -51,6 +57,8 @@ Screen(), screen.title(), image = "", screen.addshape(image),screen.setup()
 2. Pandas: read_csv(), DataFrame
 3. Tkinter: label, entry, button, get(), pack, grid, place, canvas
 4. Requests: requests.get("api_link", params=)
+5. Bs4: for web scraping
+6. Selenium: for web parsing and scraping
 
 Site visited:
 1. Colorhunt.co, for diverse combinations of colours
