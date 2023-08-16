@@ -47,9 +47,12 @@ Day 44: Started July 26, 3 days off. ended July 31
 Day 48: August 09/10
 Day 49: August 10/11
 Day 50: August 11
-Day 51: Auguest 14
+Day 51: August 14
 Day 52: August 14/15
-Day 53: Auguest 15
+Day 53: August 15
+Day 54: August 16
+
+
 Library learned so far:
 1. Turtle: goto(), getheading(), setheading(), listening and call function, write, color, 
 self.shape("circle"), self.penup(), self.shapesize(), self.color("blue"), self.speed("fastest"), self.refresh()
