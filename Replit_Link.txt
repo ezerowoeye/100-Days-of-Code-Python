@@ -1,0 +1,44 @@
+Day 1 To create a Band Name, Operate the Band Name Generator
+https://replit.com/@EzerTobi/band-name-generator-start?v=1
+
+Day 2 To Operate the Tip Calculator:
+https://replit.com/@EzerTobi/tip-calculator-start?v=1
+
+Day 3 To build the game "Treasure Island"
+https://replit.com/@EzerTobi/treasure-island-start?v=1
+
+Day 4 To build a Rock, Paper and Scissors Game module
+https://replit.com/@EzerTobi/rock-paper-scissors-start?v=1
+
+Day 5 To create a randomized password generator
+https://replit.com/@EzerTobi/password-generator-start?v=1
+
+Day 6 play the maze section of the reeborg games:
+https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=problem_world3.json&url=user_world%3Aproblem_world3.json
+
+Day 7 Built a Hangman Game
+https://replit.com/@EzerTobi/Day-7-Hangman-5-Start?v=1
+
+Day 8 Developed a Ceaser Cipher Encryption:
+https://replit.com/@EzerTobi/caesar-cipher-game?v=1
+
+Day 9 To deploy an auction game but secretly:
+https://replit.com/@EzerTobi/blind-auction?v=1
+
+Day 10 Calculator:
+https://replit.com/@EzerTobi/calculator?v=1
+
+Day 11 Blackjack in Action:
+https://replit.com/@EzerTobi/My-blackjack-code?v=1
+
+Day 12 a Number Guessing Game:
+https://replit.com/@EzerTobi/Ezer-guess-the-number?v=1
+
+Day 14 Higher Level Game:
+https://replit.com/@EzerTobi/Ezer-higher-lower?v=1
+
+Day 15 Coffee Machine:
+https://replit.com/@EzerTobi/Ezer-coffee-machine?v=1
+
+Day 40 Flight Deals Sender to User Emails:
+https://replit.com/@EzerTobi/flight-clubdeals?v=1
